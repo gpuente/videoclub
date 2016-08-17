@@ -14,6 +14,11 @@ h4{
 	margin: 5px 0 10px 0;
 }
 
+form{
+	max-width: 600px;
+	margin: 0 auto;
+}
+
 @media(max-width: 767px){
 	.align{
 		text-align: left;

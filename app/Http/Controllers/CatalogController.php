@@ -183,7 +183,8 @@ class CatalogController extends Controller
 
     public function getShow($id){
     	return view('catalog.show')
-    		->with('pelicula', $this->arrayPeliculas[$id]);
+    		->with('pelicula', $this->arrayPeliculas[$id])
+    		->with('id', $id);
     }
 
     public function getCreate(){
@@ -191,6 +192,6 @@ class CatalogController extends Controller
     }
 
     public function getEdit($id){
-    	return view('catalog.edit', array('id' => $id));
+    	return view('catalog.edit', array('id' => $id, 'pelicula' => $this->arrayPeliculas[$id]));
     }
 }

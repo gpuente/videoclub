@@ -29,8 +29,16 @@
 				@else
 					<a href="" class="btn btn-primary">Alquilar Película</a>
 				@endif
-				<a href="" class="btn btn-success">Editar Película</a>
-				<a href="{{ url('/') }}" class="btn btn-default">Volver a Listado</a>
+
+				<a href="{{ url('catalog/edit/'.$id) }}" class="btn btn-success">
+					<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+					Editar Película
+				</a>
+
+				<a href="{{ url('/') }}" class="btn btn-default">
+					<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+					Volver a Listado
+				</a>
 			</div>
 		</div>
 	</div>
