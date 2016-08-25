@@ -14,7 +14,7 @@
             </a>
         </div>
 
-        @if( true || Auth::check() )
+        @if( Auth::check() )
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li{{ Request::is('catalog*') && !Request::is('catalog/create')? ' class=active' : ''}}>
@@ -33,7 +33,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="{{url('/auth/logout')}}">
+                    <a href="{{url('/logout')}}">
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                         Cerrar sesión
                     </a>

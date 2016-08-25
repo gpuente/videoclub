@@ -2,12 +2,12 @@
 
 @section('content')
 	<div class="row">
-		
-		<form action="" method="POST">
+
+		<form action="{{ url('catalog/edit/'.$movie->id) }}" method="POST">
 			<h2>Modificar película: {{ $movie->id }}</h2>
 			{{ method_field('PUT') }}
 			{{ csrf_field() }}
-			
+
 			<div class="form-group">
 				<label for="title">Title:</label>
 				<input type="text" name="title" id="title" class="form-control" value="{{ $movie->title }}">

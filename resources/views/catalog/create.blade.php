@@ -2,7 +2,7 @@
 
 @section('content')
 	<div class="row">
-		<form action="" method="POST">
+		<form action="{{ url('/catalog/create') }}" method="POST">
 			<h2>Crear Nueva Película</h2>
 			{{ csrf_field() }}
 			
